@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+
+   <head>
+      <title>Practica Formularios con HTML</title>
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+   </head>
+   
+   <body>
+
+    <div class="text-center">
+      <h1>Hola Mundo desde HTML</h1>
+    
+    </div>
+
+      <form>
+        
+      <div class="container">
+        <div class="row">
+          <div class="col-12 ">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-control" placeholder="Ingrese Nombre" name="txtNombre">
+          </div>
+          <div class="col-12" >
+            <label class="form-label">Telefono</label>
+            <input type="text" class="form-control" name="txtTel" placeholder="Ingrese Telefono">
+          </div>
+
+          <div class="col-12">
+            <label class="form-label" >Carrera</label>
+            <select name="cmbCarrera" class="form-select" size="1">
+               <option value="No Selecciono Carrera">--Seleccione--</option>
+               <option value="Ing. Sistemas Computacionales">Ing. Sistemas</option>
+               <option value="Ing. Industrial">Ing. Industrial</option>
+               <option value="Ing. Mecatronica">Ing. Mecatronica</option>
+               <option value="Ing. Civil">Ing. Civil</option>
+               <option value="Ing. Logistica">Ing. Logistica</option>
+            </select>
+          </div>
+
+          <div class="col-12">
+            <label class="form-label" >Semestre</label>
+            <select name="cmbSemestre" class="form-select" size="1">
+               <option value="No Selecciono Semestre">--Seleccione--</option>
+               <option value="1er Semestre">1ro</option>
+               <option value="2do Semestre">2do</option>
+               <option value="3er Semestre">3ro</option>
+               <option value="4to Semestre">4to</option>
+               <option value="5to Semestre">5to</option>
+               <option value="6to Semestre">6to</option>
+               <option value="7o Semestre">7o</option>
+               <option value="8o Semestre">8o</option>
+               <option value="9o Semestre">9o</option>
+               <option value="10o Semestre">10o</option>
+               <option value="11o Semestre">11o</option>
+               <option value="12o Semestre">12o</option>
+            </select>
+          </div>
+
+          <div class="col-12">
+            <label>Genero</label>
+            <input type="radio" class="form-check-input" name="rbGenero" value="Mujer" id="idrbmujer" class="form-check-label"><label for="idrbmujer">M</label>
+            <input type="radio" class="form-check-input" name="rbGenero" value="Hombre" id="idrhombre" class="form-check-label"><label for="idrhombre">H</label>
+          </div>
+
+          <div class="col-12 text-center" >
+            <button type="reset"  class="btn btn-info">Cancelar</button>
+            <button type="button" class="btn btn-info" onclick="enviarDatos()">Registrar</button>
+          </div>
+        </div>
+      </div>
+      </form>
+      </script>
+      <!-- Enlazar el archivo js con html -->
+      <script src="js/funciones.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+   </body>
+</html>
